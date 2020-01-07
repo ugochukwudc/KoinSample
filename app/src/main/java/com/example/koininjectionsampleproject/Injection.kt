@@ -1,6 +1,6 @@
 package com.example.koininjectionsampleproject
 
-import com.example.koininjectionsampleproject.AppConnectivityManager
+import androidx.core.app.NotificationManagerCompat
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
@@ -10,6 +10,8 @@ val appModule = module {
     single {
         AppConnectivityManager(get(), get(named(INTERVAL_INJECTION)))
     }
+
+    factory { NotificationManagerCompat.from(get()) }
 }
 
 val otherModule = module {
