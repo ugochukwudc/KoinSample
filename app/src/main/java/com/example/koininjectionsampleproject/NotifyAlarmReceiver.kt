@@ -9,7 +9,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.example.koininjectionsampleproject.MainActivity.Companion.KEY_NOTIFICATION_ID
 
-class AlarmReceiver: BroadcastReceiver(){
+class NotifyAlarmReceiver: BroadcastReceiver(){
     override fun onReceive(context: Context, intent: Intent) {
         val notificationId = intent.getIntExtra(KEY_NOTIFICATION_ID, 10001)
 

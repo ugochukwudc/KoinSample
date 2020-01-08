@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <service android:name=".NotifyService" />
-        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".NotifyAlarmReceiver" />
     </application>
 
 </manifest>

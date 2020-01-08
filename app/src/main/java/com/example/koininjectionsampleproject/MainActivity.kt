@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
             PendingIntent.getBroadcast(
                 this,
                 10001,
-                Intent(this, AlarmReceiver::class.java)
+                Intent(this, NotifyAlarmReceiver::class.java)
                     .putExtra(KEY_NOTIFICATION_ID, notificationId),
                 PendingIntent.FLAG_CANCEL_CURRENT
             )
